@@ -5,7 +5,7 @@ function task3() {
         var result = a - b;
     } else if (a < 0 && b < 0) {
         var result = a * b;
-    } else if ((a < 0 && b > 0) || (a > 0 && b < 0)) {
+    } else {
         var result = a + b;
     }
 
