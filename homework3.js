@@ -8,7 +8,7 @@ function cycle() {
     alert(result);
 }
 
-var cart = new Array(["socks", 100, 1], ["shoes", 2000, 1], ["hats", 3500, 3]);
+var cart = [ ["socks", 100, 1], ["shoes", 2000, 1], ["hats", 3500, 3] ];
 var bill = 0;
 function priceCount() {
     for(var i = 0; i <= cart.length-1; i++) {
@@ -24,6 +24,6 @@ function heops() {
     var x = "x"
     for(var i = 0; i < 20; i++) {
         console.log(x)
-        x+="x"
+        x += "x"
     }
 }
