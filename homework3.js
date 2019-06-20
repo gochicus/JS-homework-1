@@ -11,7 +11,7 @@ function cycle() {
 var cart = new Array(["socks", 100, 1], ["shoes", 2000, 1], ["hats", 3500, 3]);
 var bill = 0;
 function priceCount() {
-    for(var i = 0; i <= cart.length; i++) {
+    for(var i = 0; i <= cart.length-1; i++) {
         var price = cart[i][1];
         var number = cart[i][2];
         bill += price * number;
