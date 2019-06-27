@@ -8,12 +8,16 @@
     <script src="homework2.js"></script>
     <script src="homework3.js"></script>
     <script src="homework4.js"></script>
+<!--    <script  async src="homework5.js"></script>-->
+    <link rel="stylesheet" href="board.css">
 
 </head>
 <body>
-<h2> Домашняя работа №4</h2>
-<p onclick="objectNumber()">задание №1</p>
-<p onclick="cartPrice()">задание №2</p>
+<h2> Домашняя работа №5</h2>
+<p >задание №1</p>
+    <div class="board"></div>
+<p >задание №2</p>
+<div class="cart"> </div>
 <!--<p onclick="heops()">задание №5</p>-->
 <!--<p>Задание №1</p>-->
 <!--     <pre>-->
@@ -49,5 +53,27 @@
 <!--время как выполняется скрипт. <br>-->
 <!--Разница между ними в порядке выполнения скриптов. Async выполнит тот скрипт, который раньше загрузится, в то время как-->
 <!--defer выполнит их в том порядке, в котором они расположены.-->
+<script>
+    var $set = document.getElementsByClassName("board");
+for (var i = 0; i <= 10; i++) {
+    var $boardPiece = document.createElement("div");
+    if (i % 2 == 1) {
+        boardPiece.classList.add("black");
+
+
+    }
+
+    for (var j = 0; j <= 10; j++) {
+        var $boardPiece = document.createElement("div");
+        if (i % 2 == 1) {
+            $boardPiece.classList.add("black");
+
+        }
+
+    }
+    $set = $set.appendChild($boardPiece);
+}
+
+</script>
 </body>
 </html>
