@@ -34,7 +34,7 @@ function objectNumber() {
 //       Sweater: { price:3000, size:"XL"},
 //    };
 //   for(item in cart){
-//           sum += cart.item.price;
+           sum += cart[item].price;
 //
 //   }
 //   alert(sum);
