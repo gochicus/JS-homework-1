@@ -5,7 +5,7 @@ $BuyButton.addEventListener("click", handlerButtonBuy);
 var cart = 0;
 function handlerButtonBuy($request) {
     for(var i = 0; i < $request.length ; i++) {
-        var requestValue = $request[i].innerHTML;
+        var requestValue = $request[i].innerHTML.trim();
         var catalog = {
             Chair: {price: 5000},
             Table: {price: 6000},
