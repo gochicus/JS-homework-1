@@ -12,7 +12,7 @@ function handlerButtonBuy($request) {
             Shelf: {price: 10000},
         };
         for (requestValue in catalog) {
-            cart += requestValue.price;
+            cart += catalog[requestValue].price;
         }
     }
     var $output = document.createElement("div");
