@@ -136,7 +136,7 @@ var $nav = document.querySelector(".nav");
 $nav.addEventListener("click", handleNavigation);
 var $delivery = document.querySelector(".delivery");
 var $comment = document.querySelector(".comment");
-var $structure = [$cart,$catalog,$delivery,$comment];
+var $structure = [$cart, $catalog, $delivery, $comment];
 function handleNavigation() {
     for(var i = 0; i <= $structure.length-1; i++) {
         var j = i + 1;
